@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>שאלון קצר לעסק · ארטיקום</title>
+<meta name="description" content="חמש דקות שעוזרות לנו להגיע מוכנים לשיחת ההיכרות: על העסק, מה יש היום, מה רוצים לשפר ומתי.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;900&family=Heebo:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<linearGradient id="popGrad" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FF4F7B"/><stop offset=".34" stop-color="#FF4F7B"/><stop offset=".34" stop-color="#FFA62B"/><stop offset=".67" stop-color="#FFA62B"/><stop offset=".67" stop-color="#6FD24B"/><stop offset="1" stop-color="#6FD24B"/></linearGradient>
+<symbol id="logo-pop" viewBox="0 0 60 84"><rect x="25" y="58" width="10" height="24" rx="5" fill="#E8B77D"/><path d="M10 22a20 20 0 0 1 40 0v34a6 6 0 0 1-6 6H16a6 6 0 0 1-6-6z" fill="url(#popGrad)"/><circle cx="22" cy="30" r="3.5" fill="#1B1F3B"/><circle cx="38" cy="30" r="3.5" fill="#1B1F3B"/><path d="M21 42q9 8 18 0" fill="none" stroke="#1B1F3B" stroke-width="3.5" stroke-linecap="round"/></symbol>
+</defs></svg>
+<div class="draft"><div class="wrap"><b>טיוטה</b><span>עיצוב לבדיקה. האתר עדיין לא באוויר.</span></div></div>
+<header class="site"><div class="wrap">
+  <a class="logo" href="index.html" aria-label="ארטיקום, עמוד הבית"><svg aria-hidden="true"><use href="#logo-pop"/></svg><span>ארטיקום<small>ARTICOM</small></span></a>
+  <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">תפריט</button>
+  <nav class="main" id="mainNav" aria-label="ניווט ראשי">
+    <a class="help" href="index.html#help">עזרה עם המחשב</a>
+    <a class="biz" href="index.html#business">פתרונות לעסק</a>
+    <a href="questionnaire.html" aria-current="page">שאלון לעסק</a>
+    <a href="faq-help.html">שאלות נפוצות</a>
+    <a class="cta" href="index.html#help-contact">דברו איתנו</a>
+  </nav>
+</div></header>
+<main>
+<div class="wrap page-head">
+  <div class="sec-head">
+    <span class="tag biz">שאלון קצר לעסק</span>
+    <h2>חמש דקות, ונגיע לשיחה מוכנים.</h2>
+    <p class="lede">אין תשובות נכונות. גם "לא יודע/ת" היא תשובה מצוינת. בסוף נחזור אליכם לתיאום שיחת היכרות.</p>
+  </div>
+</div>
+<div class="wrap"><div class="q" id="q">
+  <div class="progress" aria-hidden="true"><i class="now"></i><i></i><i></i><i></i><i></i></div>
+  <form id="qForm" data-journey="biz" novalidate>
+    <input type="hidden" name="kind" value="questionnaire">
+    <section class="qstep on" data-step="1">
+      <h2>1. קצת על העסק</h2>
+      <div class="field"><label for="q-biz">איך קוראים לעסק, ומה הוא עושה?</label><input id="q-biz" name="business" required><span class="err">כתבו לפחות את שם העסק.</span></div>
+      <div class="field"><label for="q-field">תחום</label><select id="q-field" name="field"><option value="">בחרו...</option><option>מסעדה, בית קפה או אוכל</option><option>חנות או מכירה</option><option>שירותים מקצועיים (עו"ד, רו"ח, ייעוץ)</option><option>בריאות, טיפול או רווחה</option><option>יופי וטיפוח</option><option>חינוך, הדרכה או חוגים</option><option>בנייה, שיפוצים או תחזוקה</option><option>תיירות ואירוח</option><option>אחר</option></select></div>
+      <div class="field"><span class="hint" style="font-weight:700;color:var(--ink)">כמה אנשים עובדים בעסק?</span><div class="choices" role="radiogroup"><label class="choice"><input type="radio" name="size" value="רק אני"><span class="box"></span>רק אני</label><label class="choice"><input type="radio" name="size" value="2 עד 5"><span class="box"></span>2 עד 5</label><label class="choice"><input type="radio" name="size" value="6 עד 20"><span class="box"></span>6 עד 20</label><label class="choice"><input type="radio" name="size" value="יותר מ-20"><span class="box"></span>יותר מ-20</label></div></div>
+      <div class="qnav"><span></span><button class="btn biz" type="button" data-next>הלאה</button></div>
+    </section>
+    <section class="qstep" data-step="2">
+      <h2>2. מה יש היום</h2>
+      <div class="field"><span class="hint" style="font-weight:700;color:var(--ink)">יש לעסק אתר?</span><div class="choices" role="radiogroup"><label class="choice"><input type="radio" name="site" value="אין אתר"><span class="box"></span>אין אתר</label><label class="choice"><input type="radio" name="site" value="יש, אבל ישן או לא עובד"><span class="box"></span>יש, אבל ישן או לא עובד</label><label class="choice"><input type="radio" name="site" value="יש ועובד סביר"><span class="box"></span>יש ועובד סביר</label></div></div>
+      <div class="field"><span class="hint" style="font-weight:700;color:var(--ink)">איפה העסק נמצא היום? (אפשר כמה)</span><div class="choices"><label class="choice"><input type="checkbox" name="channels" value="פייסבוק"><span class="box"></span>פייסבוק</label><label class="choice"><input type="checkbox" name="channels" value="אינסטגרם"><span class="box"></span>אינסטגרם</label><label class="choice"><input type="checkbox" name="channels" value="וואטסאפ עסקי"><span class="box"></span>וואטסאפ עסקי</label><label class="choice"><input type="checkbox" name="channels" value="גוגל (פרופיל עסק)"><span class="box"></span>גוגל (פרופיל עסק)</label><label class="choice"><input type="checkbox" name="channels" value="מדריכים / אתרי פרסום"><span class="box"></span>מדריכים / אתרי פרסום</label><label class="choice"><input type="checkbox" name="channels" value="בעיקר מפה לאוזן"><span class="box"></span>בעיקר מפה לאוזן</label></div></div>
+      <div class="field"><label for="q-today">איך לקוחות מגיעים אליכם היום, ואיך אתם מנהלים פניות?</label><span class="hint">למשל: "מתקשרים אליי לנייד, אני רושם בפנקס".</span><textarea id="q-today" name="today"></textarea></div>
+      <div class="qnav"><button class="btn ghost" type="button" data-prev>חזרה</button><button class="btn biz" type="button" data-next>הלאה</button></div>
+    </section>
+    <section class="qstep" data-step="3">
+      <h2>3. מה הייתם רוצים</h2>
+      <div class="field"><span class="hint" style="font-weight:700;color:var(--ink)">מה מעניין אתכם? (אפשר כמה)</span><div class="choices"><label class="choice"><input type="checkbox" name="wants" value="אתר חדש"><span class="box"></span>אתר חדש</label><label class="choice"><input type="checkbox" name="wants" value="שדרוג לאתר קיים"><span class="box"></span>שדרוג לאתר קיים</label><label class="choice"><input type="checkbox" name="wants" value="קבלת פניות מסודרת"><span class="box"></span>קבלת פניות מסודרת</label><label class="choice"><input type="checkbox" name="wants" value="קביעת תורים אונליין"><span class="box"></span>קביעת תורים אונליין</label><label class="choice"><input type="checkbox" name="wants" value="מכירה או תשלום אונליין"><span class="box"></span>מכירה או תשלום אונליין</label><label class="choice"><input type="checkbox" name="wants" value="דיוור ללקוחות"><span class="box"></span>דיוור ללקוחות</label><label class="choice"><input type="checkbox" name="wants" value="אוטומציה של משימות חוזרות"><span class="box"></span>אוטומציה של משימות חוזרות</label><label class="choice"><input type="checkbox" name="wants" value="עוזר AI למענה ראשוני"><span class="box"></span>עוזר AI למענה ראשוני</label><label class="choice"><input type="checkbox" name="wants" value="לא בטוח/ה, בואו נדבר"><span class="box"></span>לא בטוח/ה, בואו נדבר</label></div></div>
+      <div class="field"><label for="q-pain">מה הכי מציק לכם היום בצד הדיגיטלי?</label><span class="hint">הדבר שאם היה נפתר מחר, היה משנה לכם את השבוע.</span><textarea id="q-pain" name="pain"></textarea></div>
+      <div class="qnav"><button class="btn ghost" type="button" data-prev>חזרה</button><button class="btn biz" type="button" data-next>הלאה</button></div>
+    </section>
+    <section class="qstep" data-step="4">
+      <h2>4. מסגרת</h2>
+      <div class="field"><span class="hint" style="font-weight:700;color:var(--ink)">מתי הייתם רוצים להתחיל?</span><div class="choices" role="radiogroup"><label class="choice"><input type="radio" name="when" value="כמה שיותר מהר"><span class="box"></span>כמה שיותר מהר</label><label class="choice"><input type="radio" name="when" value="בחודש-חודשיים הקרובים"><span class="box"></span>בחודש-חודשיים הקרובים</label><label class="choice"><input type="radio" name="when" value="רק בודקים בינתיים"><span class="box"></span>רק בודקים בינתיים</label></div></div>
+      <div class="field"><label for="q-notes">משהו שחשוב לנו לדעת לפני השיחה?</label><span class="hint">מגבלות, לוחות זמנים, ניסיון קודם עם ספקים, או סתם מה שעל הלב.</span><textarea id="q-notes" name="notes"></textarea></div>
+      <div class="qnav"><button class="btn ghost" type="button" data-prev>חזרה</button><button class="btn biz" type="button" data-next>הלאה</button></div>
+    </section>
+    <section class="qstep" data-step="5">
+      <h2>5. איך חוזרים אליכם</h2>
+      <div class="field"><label for="q-name">שם מלא</label><input id="q-name" name="name" autocomplete="name" required><span class="err">כתבו את השם שלכם.</span></div>
+      <div class="field"><label for="q-phone">טלפון</label><input id="q-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required><span class="err">צריך מספר טלפון לתיאום השיחה.</span></div>
+      <div class="field"><label for="q-email">דוא"ל</label><input id="q-email" name="email" type="email" inputmode="email" autocomplete="email" required><span class="err">כתובת הדוא"ל לא נראית תקינה.</span></div>
+      <div class="field"><label for="q-hours">מתי נוח לכם לדבר?</label><input id="q-hours" name="hours" placeholder="למשל: בקרים, או אחרי 17:00"></div>
+      <div class="hp" aria-hidden="true"><label for="q-web">אתר</label><input id="q-web" name="website" tabindex="-1" autocomplete="off"></div>
+      <p class="fail">לא הצלחנו לשלוח כרגע. נסו שוב בעוד רגע, או כתבו ל-<a href="mailto:business@articom.co.il" dir="ltr">business@articom.co.il</a>.</p>
+      <div class="qnav"><button class="btn ghost" type="button" data-prev>חזרה</button><button class="btn biz" type="submit" id="qSubmit">שלחו, ונתאם שיחה</button></div>
+    </section>
+  </form>
+  <div class="qdone">
+    <img src="img/popsico-sm.png" width="95" height="220" alt="" style="height:120px;width:auto">
+    <h2 style="margin-top:10px">תודה! קיבלנו את השאלון.</h2>
+    <p class="lede" style="margin-inline:auto;margin-top:8px">נעבור על התשובות ונחזור אליכם לתיאום שיחת היכרות. בינתיים, אפשר להציץ ב<a href="faq-business.html">שאלות הנפוצות</a>.</p>
+  </div>
+</div></div>
+</main>
+<div class="stripe" aria-hidden="true"></div>
+<footer><div class="wrap">
+  <div><strong>ארטיקום · Articom</strong><p>עסק משפחתי · ישראל</p></div>
+  <div><strong>מסלולים</strong><ul><li><a href="index.html#help">עזרה עם המחשב</a></li><li><a href="index.html#business">פתרונות לעסק</a></li><li><a href="faq-help.html">שאלות נפוצות: מחשב</a></li><li><a href="faq-business.html">שאלות נפוצות: עסק</a></li></ul></div>
+  <div><strong>דברו איתנו</strong><ul><li>טלפון / וואטסאפ: <a href="tel:+972543037031" dir="ltr">054-303-7031</a></li><li>עזרה עם המחשב: <a href="mailto:office@articom.co.il" dir="ltr">office@articom.co.il</a></li><li>פניות עסקיות: <a href="mailto:business@articom.co.il" dir="ltr">business@articom.co.il</a></li></ul></div>
+</div></footer>
+<script>
+(function(){
+  var b=document.getElementById('menuBtn'),n=document.getElementById('mainNav');if(b){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false')})}
+  var q=document.getElementById('q'),f=document.getElementById('qForm'),steps=[].slice.call(f.querySelectorAll('.qstep')),bars=[].slice.call(q.querySelectorAll('.progress i')),cur=0;
+  function show(i){cur=i;steps.forEach(function(s,k){s.classList.toggle('on',k===i)});bars.forEach(function(x,k){x.className=k<i?'done':k===i?'now':''});q.scrollIntoView({block:'start'});}
+  function valid(step){var ok=true;step.querySelectorAll('.field').forEach(function(fd){var c=fd.querySelector('input,textarea,select');if(!c||!c.required)return;var bad=!c.value.trim()||(c.type==='email'&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(c.value));fd.classList.toggle('invalid',bad);if(bad&&ok){ok=false;c.focus()}});return ok;}
+  f.addEventListener('click',function(e){var t=e.target.closest('[data-next],[data-prev]');if(!t)return;if(t.hasAttribute('data-next')){if(valid(steps[cur]))show(cur+1)}else show(cur-1)});
+  f.addEventListener('input',function(e){var fd=e.target.closest('.field');if(fd)fd.classList.remove('invalid')});
+  f.addEventListener('submit',function(e){
+    e.preventDefault(); if(!valid(steps[cur]))return;
+    var data={journey:'biz',kind:'questionnaire',answers:{}};
+    new FormData(f).forEach(function(v,k){ if(k==='channels'||k==='wants'){(data.answers[k]=data.answers[k]||[]).push(v)} else if(['name','phone','email','business','website'].indexOf(k)>-1){data[k]=v} else data.answers[k]=v; });
+    f.classList.remove('failed');f.classList.add('busy');
+    fetch('/api/submit',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(data)})
+      .then(function(r){return r.ok?r.json():Promise.reject(r.status)})
+      .then(function(j){if(!j||!j.ok)throw new Error('rejected');q.classList.add('done');q.scrollIntoView({block:'start'})})
+      .catch(function(){f.classList.add('failed');f.querySelector('.fail').style.display='block'})
+      .then(function(){f.classList.remove('busy')});
+  });
+})();
+</script>
+</body>
+</html>

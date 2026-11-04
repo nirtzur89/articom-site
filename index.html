@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ארטיקום</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="ארטיקום — טכנולוגיה בטעם טוב. עזרה אישית עם המחשב לאנשים, ופתרונות דיגיטליים לעסקים קטנים. עסק משפחתי מישראל.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;900&family=Heebo:wght@400;500;700&display=swap">
+<link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+
+<!-- Popsico, the mascot. One symbol, reused at several sizes. -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <linearGradient id="popGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FF4F7B"/><stop offset=".34" stop-color="#FF4F7B"/>
+      <stop offset=".34" stop-color="#FFA62B"/><stop offset=".67" stop-color="#FFA62B"/>
+      <stop offset=".67" stop-color="#6FD24B"/><stop offset="1" stop-color="#6FD24B"/>
+    </linearGradient>
+    <symbol id="logo-pop" viewBox="0 0 60 84">
+      <rect x="25" y="58" width="10" height="24" rx="5" fill="#E8B77D"/>
+      <path d="M10 22a20 20 0 0 1 40 0v34a6 6 0 0 1-6 6H16a6 6 0 0 1-6-6z" fill="url(#popGrad)"/>
+      <circle cx="22" cy="30" r="3.5" fill="#1B1F3B"/><circle cx="38" cy="30" r="3.5" fill="#1B1F3B"/>
+      <path d="M21 42q9 8 18 0" fill="none" stroke="#1B1F3B" stroke-width="3.5" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+</svg>
+
+<div class="draft"><div class="wrap"><b>טיוטה</b><span>עיצוב לבדיקה. פרטי הקשר והטפסים עדיין לא מחוברים.</span></div></div>
+
+<header class="site">
+  <div class="wrap">
+    <a class="logo" href="#top" aria-label="ארטיקום, עמוד הבית"><svg aria-hidden="true"><use href="#logo-pop"/></svg><span>ארטיקום<small>ARTICOM</small></span></a>
+    <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="mainNav">תפריט</button>
+    <nav class="main" id="mainNav" aria-label="ניווט ראשי">
+      <a class="help" href="index.html#help">עזרה עם המחשב</a>
+      <a class="biz" href="index.html#business">פתרונות לעסק</a>
+      <a href="questionnaire.html">שאלון לעסק</a>
+      <a href="faq-help.html">שאלות נפוצות</a>
+      <a class="cta" href="index.html#help-contact">דברו איתנו</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="confetti" aria-hidden="true">
+    <i style="left:6%;top:12%;width:14px;height:14px;background:var(--straw);transform:rotate(20deg)"></i>
+    <i style="left:14%;top:70%;width:10px;height:10px;background:var(--lime);transform:rotate(45deg)"></i>
+    <i style="left:40%;top:8%;width:12px;height:12px;background:var(--berry);transform:rotate(10deg)"></i>
+    <i style="left:62%;top:85%;width:16px;height:16px;background:var(--sun);border-radius:50%"></i>
+    <i style="left:88%;top:18%;width:12px;height:12px;background:var(--grape);transform:rotate(30deg)"></i>
+    <i style="left:93%;top:60%;width:10px;height:10px;background:var(--mango);border-radius:50%"></i>
+    <i style="left:30%;top:92%;width:12px;height:12px;background:var(--straw);border-radius:50%"></i>
+  </div>
+  <div class="wrap">
+    <div class="hero-top">
+      <div class="hero-copy">
+        <span class="eyebrow">ארטיקום · עסק משפחתי מישראל</span>
+        <h1>טכנולוגיה <span class="hl">בטעם טוב</span></h1>
+        <p class="lede">טכנולוגיה לא חייבת להיות קרה. עזרה אישית עם המחשב לאנשים, ופתרונות דיגיטליים לעסקים. פשוט, צבעוני, ועם חיוך.</p>
+      </div>
+      <div class="mascot-stage">
+        <div class="bubble">היי! אני פופסיקו. במה אפשר לעזור היום?</div>
+        <img class="pop" src="img/popsico.png" width="277" height="640" alt="פופסיקו, הארטיק המחייך של ארטיקום" fetchpriority="high">
+      </div>
+    </div>
+    <div class="paths">
+      <article class="path help">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2.5"/><path d="M8 20h8M12 16v4"/><path d="M9 10l2 2 4-4"/></svg></div>
+        <h2>המחשב עושה בעיות?</h2>
+        <p class="who">לאנשים שרוצים שהמחשב פשוט יעבוד.</p>
+        <ul>
+          <li>איטי, תקוע, לא נפתח? נטפל בזה.</li>
+          <li>עדכונים, התקנות וגיבויים, בלי דרמה.</li>
+          <li>מסבירים לאט, ובלי מילים גדולות.</li>
+        </ul>
+        <a class="btn help" href="#help">תעזרו לי עם המחשב <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></a>
+      </article>
+      <article class="path biz">
+        <div class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19l4-1 9-9-3-3-9 9z"/><path d="M14 6l3 3"/><path d="M18 3l.7 1.6L20.3 5l-1.6.7L18 7.3l-.7-1.6L15.7 5l1.6-.4z"/></svg></div>
+        <h2>לעסק מגיע אתר שעובד</h2>
+        <p class="who">לעסקים קטנים שרוצים כלים, לא כאב ראש.</p>
+        <ul>
+          <li>אתר שנראה ומרגיש כמו העסק שלכם.</li>
+          <li>פניות שמגיעות אליכם, לא לאבדון.</li>
+          <li>אוטומציות ו-AI רק איפה שזה משתלם.</li>
+        </ul>
+        <a class="btn biz" href="#business">בואו נדבר על העסק <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Computer help ===== -->
+<section class="block tint-help" id="help">
+  <div class="wrap">
+    <div class="intro">
+      <div class="sec-head">
+        <span class="tag help">עזרה עם המחשב</span>
+        <h2>קודם כל, נשימה. יש עם מי לדבר.</h2>
+        <p class="lede">לא צריך להבין במחשבים. ספרו לנו מה קורה, בכל מילה שבא לכם, ואנחנו כבר נבין את השאר.</p>
+      </div>
+      <figure class="scene"><img src="img/photo-help.webp" width="1200" height="900" alt="צעירה מראה לאיש מבוגר משהו על מסך המחשב הנייד במטבח, שניהם מחייכים" loading="lazy"><img class="badge" src="img/popsico-sm.png" width="95" height="220" alt="" aria-hidden="true"></figure>
+    </div>
+    <div class="grid">
+      <div class="card c-mango"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/></svg></div><h3>מעדכנים ומתקינים</h3><p>מערכת, תוכנות, מדפסת. מה שצריך נכנס, מה שמפריע יוצא.</p></div>
+      <div class="card c-straw"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14.7 6.3a4 4 0 0 0 5 5L22 9l-3-3-2.3 2.3z"/><path d="M3 21l9.6-9.6"/></svg></div><h3>מתקנים מה שנתקע</h3><p>מחשב איטי, הודעות מוזרות, אינטרנט שנעלם. מוצאים את הסיבה ומסדרים.</p></div>
+      <div class="card c-lime"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v14"/><path d="M4 19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2"/><path d="M8 7h8M8 11h6"/></svg></div><h3>מלמדים, לא רק מתקנים</h3><p>דואר, תמונות, זום עם הנכדים. מראים איך, בקצב שלכם, גם בפעם השלישית.</p></div>
+      <div class="card c-berry"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21a9 9 0 1 0-9-9c0 2 .6 3.8 1.7 5.3L3 21z"/><path d="M8 11h8M8 14h5"/></svg></div><h3>בגובה העיניים</h3><p>בלי ז'רגון, בלי לחץ, בלי "זה פשוט". כל שאלה היא שאלה טובה.</p></div>
+    </div>
+
+    <div class="contact" id="help-contact">
+      <div class="direct">
+        <h3>הכי פשוט? להרים טלפון.</h3>
+        <a class="btn help" href="tel:+972543037031" id="callBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6.3 6.3l1.3-1.3a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg>להתקשר <span dir="ltr">054-303-7031</span></a>
+        <a class="btn ghost help" href="https://wa.me/972543037031?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A2%D7%96%D7%A8%D7%94%20%D7%A2%D7%9D%20%D7%94%D7%9E%D7%97%D7%A9%D7%91" id="waBtn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 21l2.1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>הודעה בוואטסאפ</a>
+        <p class="note">אפשר גם במייל: <a href="mailto:office@articom.co.il" dir="ltr">office@articom.co.il</a></p>
+        <p class="note"><span class="ph">ממתין</span> אזור השירות ושעות הפעילות.</p>
+      </div>
+      <form class="f help" id="helpForm" data-journey="help" novalidate>
+        <img class="peek" src="img/popsico-sm.png" width="95" height="220" alt="" aria-hidden="true">
+        <h3>או כתבו לנו, ונחזור אליכם</h3>
+        <p class="note">כמה מילים מספיקות. את השאר נברר בטלפון.</p>
+        <div class="field"><label for="h-name">איך קוראים לכם?</label><input id="h-name" name="name" autocomplete="name" required><span class="err">כתבו שם, כדי שנדע למי לחזור.</span></div>
+        <div class="field"><label for="h-phone">לאיזה מספר לחזור?</label><input id="h-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required><span class="err">צריך מספר טלפון כדי להתקשר.</span></div>
+        <div class="field"><label for="h-msg">מה המחשב עושה לכם?</label><span class="hint">למשל: "נתקע כשאני פותח את הדואר".</span><textarea id="h-msg" name="message" required></textarea><span class="err">ספרו במילה או שתיים מה קורה.</span></div>
+        <div class="hp" aria-hidden="true"><label for="h-web">אתר</label><input id="h-web" name="website" tabindex="-1" autocomplete="off"></div>
+        <button class="btn help" type="submit">שלחו, ונחזור אליכם</button>
+        <p class="sent">תודה! קיבלנו. נחזור אליכם בהקדם.</p>
+        <p class="fail">לא הצלחנו לשלוח כרגע. נסו שוב בעוד רגע, או התקשרו: <a href="tel:+972543037031" dir="ltr">054-303-7031</a>.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Business ===== -->
+<section class="block tint-biz" id="business">
+  <div class="wrap">
+    <div class="intro">
+      <div class="sec-head">
+        <span class="tag biz">פתרונות לעסק</span>
+        <h2>כלים שעובדים בשבילכם. לא להפך.</h2>
+        <p class="lede">לא כל עסק צריך את כל הכלים. קודם מבינים מה באמת יעזור לכם, ואז בונים בדיוק את זה. בלי להעמיס, בלי לסבך.</p>
+      </div>
+      <figure class="scene"><img src="img/photo-biz.webp" width="1200" height="900" alt="בעלת בית קפה קטן מסתכלת בטלפון ומחייכת" loading="lazy"><img class="badge" src="img/popsico-sm.png" width="95" height="220" alt="" aria-hidden="true"></figure>
+    </div>
+    <div class="grid">
+      <div class="card c-berry"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M3 9h18M9 21V9"/></svg></div><h3>אתר לעסק</h3><p>עמודים ברורים שמסבירים מה אתם עושים, ומביאים פניות.</p></div>
+      <div class="card c-grape"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/><path d="M6 6L5 3H2"/></svg></div><h3>הזמנות ותשלומים</h3><p>כשצריך, מוסיפים הזמנה או תשלום. פשוט ללקוח, פשוט לכם.</p></div>
+      <div class="card c-straw"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16v16H4z"/><path d="M8 9h8M8 13h8M8 17h5"/></svg></div><h3>טפסים שמגיעים ליעד</h3><p>כל פנייה נוחתת אצל מי שצריך לטפל בה. לא בתיקיית הספאם.</p></div>
+      <div class="card c-lime"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18"/><path d="M6 16V10M11 16V5M16 16v-7M21 16v-3"/></svg></div><h3>מספרים שמדברים ברור</h3><p>כמה אנשים נכנסו, כמה פנו, מה עובד. בלי טבלאות מפחידות.</p></div>
+      <div class="card c-mango"><div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 4.6L18 9.4l-4.2 1.8L12 16l-1.8-4.8L6 9.4l4.2-1.8z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg></div><h3>אוטומציות ו-AI</h3><p>למשימות שחוזרות על עצמן. רק איפה שזה חוסך זמן אמיתי.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="process">
+  <div class="wrap">
+    <div class="intro">
+      <div class="sec-head">
+        <span class="tag lime">איך זה עובד</span>
+        <h2>חמישה שלבים, אפס הפתעות.</h2>
+        <p class="lede">ככה נראית עבודה משותפת, מהפנייה הראשונה ועד שהאתר באוויר.</p>
+      </div>
+      <figure class="scene"><img src="img/photo-meet.webp" width="1200" height="900" alt="בעל עסק ויועצת צעירה בשיחה נעימה ליד שולחן בבית קפה, מחשב נייד ביניהם" loading="lazy"><img class="badge" src="img/popsico-sm.png" width="95" height="220" alt="" aria-hidden="true"></figure>
+    </div>
+    <div class="two">
+      <ol class="steps">
+        <li class="step"><div><h3>נפגשים</h3><p>שיחת היכרות קצרה על העסק, הלקוחות והיום-יום שלכם.</p></div></li>
+        <li class="step"><div><h3>מתכננים</h3><p>תכולה ברורה, שלבים, והצעת מחיר מותאמת. בלי אותיות קטנות.</p></div></li>
+        <li class="step"><div><h3>לוחצים יד</h3><p>מסכמים תנאים ותשלום, וחותמים.</p></div></li>
+        <li class="step"><div><h3>בונים ובודקים</h3><p>מפתחים, בודקים, ומתקנים עד שזה עובד כמו שצריך.</p></div></li>
+        <li class="step"><div><h3>משיקים ומלווים</h3><p>עולים לאוויר, מדריכים, ונשארים בסביבה.</p></div></li>
+      </ol>
+      <form class="f biz" id="bizForm" data-journey="biz" novalidate>
+        <img class="peek" src="img/popsico-sm.png" width="95" height="220" alt="" aria-hidden="true">
+        <h3>בואו נכיר את העסק שלכם</h3>
+        <p class="note">נתאם שיחה קצרה, ונחזור אליכם עם הצעה שמתאימה לכם.</p>
+        <div class="field"><label for="b-name">שם מלא</label><input id="b-name" name="name" autocomplete="name" required><span class="err">כתבו את השם שלכם.</span></div>
+        <div class="field"><label for="b-biz">שם העסק ובמה הוא עוסק</label><input id="b-biz" name="business" autocomplete="organization" required><span class="err">ספרו לנו מה שם העסק ובמה הוא עוסק.</span></div>
+        <div class="field"><label for="b-phone">טלפון</label><input id="b-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required><span class="err">צריך מספר טלפון לתיאום השיחה.</span></div>
+        <div class="field"><label for="b-email">דוא"ל</label><input id="b-email" name="email" type="email" inputmode="email" autocomplete="email" required><span class="err">כתובת הדוא"ל לא נראית תקינה.</span></div>
+        <div class="field"><label for="b-msg">מה הייתם רוצים לשפר או לבנות?</label><span class="hint">לא חובה. "עוד לא בטוחים" היא תשובה מצוינת.</span><textarea id="b-msg" name="message"></textarea></div>
+        <div class="hp" aria-hidden="true"><label for="b-web">אתר</label><input id="b-web" name="website" tabindex="-1" autocomplete="off"></div>
+        <button class="btn biz" type="submit">לתאם שיחת היכרות</button>
+        <p class="sent">תודה! קיבלנו. נחזור אליכם לתיאום שיחה.</p>
+        <p class="fail">לא הצלחנו לשלוח כרגע. נסו שוב בעוד רגע, או כתבו ל-<a href="mailto:business@articom.co.il" dir="ltr">business@articom.co.il</a>.</p>
+        <p class="note">מעדיפים לכתוב ישירות? <a href="mailto:business@articom.co.il" dir="ltr">business@articom.co.il</a></p>
+        <p class="note">רוצים להגיע מוכנים לשיחה? <a href="questionnaire.html">מלאו את השאלון הקצר לעסק</a>.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="after">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="tag sun">מה קורה אחרי שלוחצים ״שלח״?</span>
+      <h2>בלי חורים שחורים. ככה זה הולך.</h2>
+      <p class="lede">כל פנייה נכנסת למערכת שלנו ומגיעה מיד לאדם שמטפל בה. לא לתיבת ספאם, לא לרשימת המתנה.</p>
+    </div>
+    <div class="flows">
+      <article class="flow help">
+        <h3>פניתם בנושא המחשב</h3>
+        <ol>
+          <li><b>ההודעה אצלנו.</b> היא נכנסת למערכת ומגיעה לנייד שלנו.</li>
+          <li><b>מתקשרים אליכם.</b> שיחה קצרה כדי להבין מה קורה. הרבה פעמים זה נפתר כבר בטלפון.</li>
+          <li><b>פותרים.</b> מרחוק, בחיבור מאובטח שאתם מאשרים, או בביקור אצלכם. מסבירים מה עשינו.</li>
+        </ol>
+        <a class="btn ghost help" href="faq-help.html">שאלות נפוצות על עזרה עם המחשב</a>
+      </article>
+      <article class="flow biz">
+        <h3>פניתם בנושא העסק</h3>
+        <ol>
+          <li><b>אישור במייל.</b> אתם מקבלים אישור שהפנייה התקבלה, ואנחנו מקבלים את הפרטים.</li>
+          <li><b>שיחת היכרות.</b> חוזרים אליכם לתיאום שיחה קצרה על העסק, הלקוחות והצרכים.</li>
+          <li><b>הצעה מותאמת.</b> תוכנית ברורה עם תכולה, שלבים ומחיר. בלי אותיות קטנות.</li>
+        </ol>
+        <a class="btn ghost biz" href="faq-business.html">שאלות נפוצות על פתרונות לעסק</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="block" id="about" style="background:var(--soft)">
+  <div class="wrap">
+    <div class="about">
+      <div class="about-text">
+        <span class="tag sun">מי אנחנו</span>
+        <h2>למה ארטיקום?</h2>
+        <p>כי ארטיק זה משהו שכולם אוהבים: פשוט, צבעוני, ומשמח. ככה אנחנו רוצים שטכנולוגיה תרגיש.</p>
+        <p>אנחנו משפחה אחת, שני דורות. התחלנו מעזרה אישית במחשבים, פנים מול פנים ובסבלנות. היום הדור הבא מוסיף פתרונות דיגיטליים לעסקים. אותה גישה, אותו חיוך.</p>
+        <p>פופסיקו הוא העוזר הרשמי שלנו. תמיד מחייך, ואף פעם לא נמס מלחץ.</p>
+        <p class="note"><span class="ph">ממתין</span> שמות בני המשפחה ותמונה, אם רוצים להציג.</p>
+      </div>
+      <div class="about-art" aria-hidden="true">
+        <div class="ring"></div>
+        <img class="pop" src="img/popsico.png" width="277" height="640" alt="" loading="lazy">
+        <div class="nametag">פופסיקו</div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="stripe" aria-hidden="true"></div>
+<footer>
+  <div class="wrap">
+    <div><strong>ארטיקום · Articom</strong><p>עסק משפחתי · ישראל</p><p><span class="ph">ממתין</span> אזור שירות</p></div>
+    <div><strong>מסלולים</strong><ul><li><a href="#help">עזרה עם המחשב</a></li><li><a href="#business">פתרונות לעסק</a></li><li><a href="questionnaire.html">שאלון לעסק</a></li><li><a href="faq-help.html">שאלות נפוצות: מחשב</a></li><li><a href="faq-business.html">שאלות נפוצות: עסק</a></li></ul></div>
+    <div><strong>דברו איתנו</strong><ul><li>טלפון / וואטסאפ: <a href="tel:+972543037031" dir="ltr">054-303-7031</a></li><li>עזרה עם המחשב: <a href="mailto:office@articom.co.il" dir="ltr">office@articom.co.il</a></li><li>פניות עסקיות: <a href="mailto:business@articom.co.il" dir="ltr">business@articom.co.il</a></li></ul></div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var btn=document.getElementById('menuBtn'),nav=document.getElementById('mainNav');
+  if(btn){btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o?'true':'false')});
+    nav.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');btn.setAttribute('aria-expanded','false')}})}
+  var ENDPOINT='/api/submit';
+  function wire(id){
+    var f=document.getElementById(id); if(!f) return;
+    f.addEventListener('submit',function(e){
+      e.preventDefault(); var ok=true;
+      f.querySelectorAll('.field').forEach(function(fd){
+        var c=fd.querySelector('input,textarea'); if(!c) return;
+        var bad=(c.required&&!c.value.trim())||(c.type==='email'&&c.value&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(c.value));
+        fd.classList.toggle('invalid',bad); if(bad&&ok){ok=false;c.focus()}
+      });
+      if(!ok) return;
+      var data={journey:f.getAttribute('data-journey')};
+      new FormData(f).forEach(function(v,k){data[k]=v});
+      f.classList.remove('failed'); f.classList.add('busy');
+      fetch(ENDPOINT,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(data)})
+        .then(function(r){return r.ok?r.json():Promise.reject(r.status)})
+        .then(function(j){ if(!j||!j.ok) throw new Error('rejected'); f.classList.add('done'); f.querySelector('.sent').scrollIntoView({block:'nearest'}); })
+        .catch(function(){ f.classList.add('failed'); f.querySelector('.fail').scrollIntoView({block:'nearest'}); })
+        .then(function(){ f.classList.remove('busy'); });
+    });
+    f.addEventListener('input',function(e){var fd=e.target.closest('.field');if(fd)fd.classList.remove('invalid')});
+  }
+  wire('helpForm'); wire('bizForm');
+})();
+</script>
+</body>
+</html>
