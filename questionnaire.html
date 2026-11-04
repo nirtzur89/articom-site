@@ -87,6 +87,7 @@
   <div><strong>מסלולים</strong><ul><li><a href="index.html#help">עזרה עם המחשב</a></li><li><a href="index.html#business">פתרונות לעסק</a></li><li><a href="faq-help.html">שאלות נפוצות: מחשב</a></li><li><a href="faq-business.html">שאלות נפוצות: עסק</a></li></ul></div>
   <div><strong>דברו איתנו</strong><ul><li>טלפון / וואטסאפ: <a href="tel:+972543037031" dir="ltr">054-303-7031</a></li><li>עזרה עם המחשב: <a href="mailto:office@articom.co.il" dir="ltr">office@articom.co.il</a></li><li>פניות עסקיות: <a href="mailto:business@articom.co.il" dir="ltr">business@articom.co.il</a></li></ul></div>
 </div></footer>
+<script src="js/submit.js"></script>
 <script>
 (function(){
   var b=document.getElementById('menuBtn'),n=document.getElementById('mainNav');if(b){b.addEventListener('click',function(){var o=n.classList.toggle('open');b.setAttribute('aria-expanded',o?'true':'false')})}
@@ -100,8 +101,7 @@
     var data={journey:'biz',kind:'questionnaire',answers:{}};
     new FormData(f).forEach(function(v,k){ if(k==='channels'||k==='wants'){(data.answers[k]=data.answers[k]||[]).push(v)} else if(['name','phone','email','business','website'].indexOf(k)>-1){data[k]=v} else data.answers[k]=v; });
     f.classList.remove('failed');f.classList.add('busy');
-    fetch('/api/submit',{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(data)})
-      .then(function(r){return r.ok?r.json():Promise.reject(r.status)})
+    window.ArticomSubmit(data)
       .then(function(j){if(!j||!j.ok)throw new Error('rejected');q.classList.add('done');q.scrollIntoView({block:'start'})})
       .catch(function(){f.classList.add('failed');f.querySelector('.fail').style.display='block'})
       .then(function(){f.classList.remove('busy')});

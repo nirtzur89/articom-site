@@ -255,12 +255,12 @@
   </div>
 </footer>
 
+<script src="js/submit.js"></script>
 <script>
 (function(){
   var btn=document.getElementById('menuBtn'),nav=document.getElementById('mainNav');
   if(btn){btn.addEventListener('click',function(){var o=nav.classList.toggle('open');btn.setAttribute('aria-expanded',o?'true':'false')});
     nav.addEventListener('click',function(e){if(e.target.tagName==='A'){nav.classList.remove('open');btn.setAttribute('aria-expanded','false')}})}
-  var ENDPOINT='/api/submit';
   function wire(id){
     var f=document.getElementById(id); if(!f) return;
     f.addEventListener('submit',function(e){
@@ -274,8 +274,7 @@
       var data={journey:f.getAttribute('data-journey')};
       new FormData(f).forEach(function(v,k){data[k]=v});
       f.classList.remove('failed'); f.classList.add('busy');
-      fetch(ENDPOINT,{method:'POST',headers:{'content-type':'application/json'},body:JSON.stringify(data)})
-        .then(function(r){return r.ok?r.json():Promise.reject(r.status)})
+      window.ArticomSubmit(data)
         .then(function(j){ if(!j||!j.ok) throw new Error('rejected'); f.classList.add('done'); f.querySelector('.sent').scrollIntoView({block:'nearest'}); })
         .catch(function(){ f.classList.add('failed'); f.querySelector('.fail').scrollIntoView({block:'nearest'}); })
         .then(function(){ f.classList.remove('busy'); });
