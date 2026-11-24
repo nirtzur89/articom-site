@@ -3,14 +3,55 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>ארטיקום</title>
+<title>ארטיקום · עזרה עם המחשב בשרון ובגוש דן ופתרונות דיגיטליים לעסקים</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="ארטיקום — טכנולוגיה בטעם טוב. עזרה אישית עם המחשב לאנשים, ופתרונות דיגיטליים לעסקים קטנים. עסק משפחתי מישראל.">
+<meta name="description" content="עזרה אישית עם המחשב, בבית או מרחוק, ופתרונות דיגיטליים לעסקים קטנים. ביקורי בית באזור השרון וגוש דן. ארטיקום, עסק משפחתי מישראל.">
+<link rel="canonical" href="https://articom.co.il/">
+<meta name="theme-color" content="#FFFFFF">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="img/favicon-96.png" type="image/png" sizes="96x96">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="he_IL">
+<meta property="og:site_name" content="ארטיקום">
+<meta property="og:title" content="ארטיקום · עזרה עם המחשב בשרון ובגוש דן ופתרונות דיגיטליים לעסקים">
+<meta property="og:description" content="עזרה אישית עם המחשב, בבית או מרחוק, ופתרונות דיגיטליים לעסקים קטנים. ביקורי בית באזור השרון וגוש דן. ארטיקום, עסק משפחתי מישראל.">
+<meta property="og:url" content="https://articom.co.il/">
+<meta property="og:image" content="https://articom.co.il/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="פופסיקו, הארטיק המחייך של ארטיקום: טכנולוגיה בטעם טוב">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;900&family=Heebo:wght@400;500;700&display=swap">
 <link rel="stylesheet" href="css/site.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "LocalBusiness",
+ "name": "ארטיקום",
+ "alternateName": "Articom",
+ "url": "https://articom.co.il/",
+ "image": "https://articom.co.il/img/og.png",
+ "slogan": "טכנולוגיה בטעם טוב",
+ "description": "עזרה אישית עם המחשב, בבית או מרחוק, ופתרונות דיגיטליים לעסקים קטנים. ביקורי בית באזור השרון וגוש דן. ארטיקום, עסק משפחתי מישראל.",
+ "telephone": "+972543037031",
+ "email": "office@articom.co.il",
+ "areaServed": [
+  {
+   "@type": "Place",
+   "name": "השרון"
+  },
+  {
+   "@type": "Place",
+   "name": "גוש דן"
+  }
+ ]
+}
+</script>
 </head>
-<body>
+<body class="has-bar" data-zone="help">
 
 <!-- Popsico, the mascot. One symbol, reused at several sizes. -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true">
@@ -39,7 +80,7 @@
       <a class="biz" href="index.html#business">פתרונות לעסק</a>
       <a href="questionnaire.html">שאלון לעסק</a>
       <a href="faq-help.html">שאלות נפוצות</a>
-      <a class="cta" href="index.html#help-contact">דברו איתנו</a>
+      <a class="cta" id="ctaLink" href="index.html#help-contact">דברו איתנו</a>
     </nav>
   </div>
 </header>
@@ -60,7 +101,7 @@
       <div class="hero-copy">
         <span class="eyebrow">ארטיקום · עסק משפחתי מישראל</span>
         <h1>טכנולוגיה <span class="hl">בטעם טוב</span></h1>
-        <p class="lede">טכנולוגיה לא חייבת להיות קרה. עזרה אישית עם המחשב לאנשים, ופתרונות דיגיטליים לעסקים. פשוט, צבעוני, ועם חיוך.</p>
+        <p class="lede">עזרה אישית עם המחשב, בבית או מרחוק, ופתרונות דיגיטליים לעסקים קטנים. ביקורי בית בשרון ובגוש דן. פשוט, צבעוני, ועם חיוך.</p>
       </div>
       <div class="mascot-stage">
         <div class="bubble">היי! אני פופסיקו. במה אפשר לעזור היום?</div>
@@ -119,13 +160,14 @@
         <a class="btn ghost help" href="https://wa.me/972543037031?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A2%D7%96%D7%A8%D7%94%20%D7%A2%D7%9D%20%D7%94%D7%9E%D7%97%D7%A9%D7%91" id="waBtn" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 21l2.1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>הודעה בוואטסאפ</a>
         <p class="note">אפשר גם במייל: <a href="mailto:office@articom.co.il" dir="ltr">office@articom.co.il</a></p>
         <p class="note">ביקורי בית באזור השרון וגוש דן. תקלות תוכנה אפשר לפתור גם מרחוק.</p>
+        <p class="safe"><b>חיבור מרחוק? רק באישור שלכם.</b> אתם רואים הכל ויכולים לעצור בכל רגע, ואנחנו לא שומרים סיסמאות. <a href="faq-help.html#remote">איך זה עובד</a></p>
       </div>
       <form class="f help" id="helpForm" data-journey="help" novalidate>
         <img class="peek" src="img/popsico-sm.png" width="95" height="220" alt="" aria-hidden="true">
         <h3>או כתבו לנו, ונחזור אליכם</h3>
         <p class="note">כמה מילים מספיקות. את השאר נברר בטלפון.</p>
         <div class="field"><label for="h-name">איך קוראים לכם?</label><input id="h-name" name="name" autocomplete="name" required><span class="err">כתבו שם, כדי שנדע למי לחזור.</span></div>
-        <div class="field"><label for="h-phone">לאיזה מספר לחזור?</label><input id="h-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required><span class="err">צריך מספר טלפון כדי להתקשר.</span></div>
+        <div class="field"><label for="h-phone">לאיזה מספר לחזור?</label><input id="h-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required><span class="err">צריך מספר טלפון תקין, למשל 050-1234567.</span></div>
         <div class="field"><label for="h-msg">מה המחשב עושה לכם?</label><span class="hint">למשל: "נתקע כשאני פותח את הדואר".</span><textarea id="h-msg" name="message" required></textarea><span class="err">ספרו במילה או שתיים מה קורה.</span></div>
         <div class="hp" aria-hidden="true"><label for="h-web">אתר</label><input id="h-web" name="website" tabindex="-1" autocomplete="off"></div>
         <button class="btn help" type="submit">שלחו, ונחזור אליכם</button>
@@ -176,12 +218,13 @@
         <li class="step"><div><h3>משיקים ומלווים</h3><p>עולים לאוויר, מדריכים, ונשארים בסביבה.</p></div></li>
       </ol>
       <form class="f biz" id="bizForm" data-journey="biz" novalidate>
+        <span class="anchor" id="biz-contact"></span>
         <img class="peek" src="img/popsico-sm.png" width="95" height="220" alt="" aria-hidden="true">
         <h3>בואו נכיר את העסק שלכם</h3>
         <p class="note">נתאם שיחה קצרה, ונחזור אליכם עם הצעה שמתאימה לכם.</p>
         <div class="field"><label for="b-name">שם מלא</label><input id="b-name" name="name" autocomplete="name" required><span class="err">כתבו את השם שלכם.</span></div>
         <div class="field"><label for="b-biz">שם העסק ובמה הוא עוסק</label><input id="b-biz" name="business" autocomplete="organization" required><span class="err">ספרו לנו מה שם העסק ובמה הוא עוסק.</span></div>
-        <div class="field"><label for="b-phone">טלפון</label><input id="b-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required><span class="err">צריך מספר טלפון לתיאום השיחה.</span></div>
+        <div class="field"><label for="b-phone">טלפון</label><input id="b-phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" required><span class="err">צריך מספר טלפון תקין, למשל 050-1234567.</span></div>
         <div class="field"><label for="b-email">דוא"ל</label><input id="b-email" name="email" type="email" inputmode="email" autocomplete="email" required><span class="err">כתובת הדוא"ל לא נראית תקינה.</span></div>
         <div class="field"><label for="b-msg">מה הייתם רוצים לשפר או לבנות?</label><span class="hint">לא חובה. "עוד לא בטוחים" היא תשובה מצוינת.</span><textarea id="b-msg" name="message"></textarea></div>
         <div class="hp" aria-hidden="true"><label for="b-web">אתר</label><input id="b-web" name="website" tabindex="-1" autocomplete="off"></div>
@@ -254,6 +297,8 @@
   </div>
 </footer>
 
+<div class="callbar" role="region" aria-label="יצירת קשר מהירה"><div class="cb-help"><a class="btn help" href="tel:+972543037031"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.6a2 2 0 0 1-.5 2.1L8 9.7a16 16 0 0 0 6.3 6.3l1.3-1.3a2 2 0 0 1 2.1-.5c.8.3 1.7.6 2.6.7a2 2 0 0 1 1.7 2z"/></svg>להתקשר</a><a class="btn ghost help" href="https://wa.me/972543037031?text=%D7%A9%D7%9C%D7%95%D7%9D%2C%20%D7%90%D7%A9%D7%9E%D7%97%20%D7%9C%D7%A2%D7%96%D7%A8%D7%94%20%D7%A2%D7%9D%20%D7%94%D7%9E%D7%97%D7%A9%D7%91" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 21l2.1-5.4A8.5 8.5 0 1 1 21 11.5z"/></svg>וואטסאפ</a></div><div class="cb-biz"><a class="btn biz" href="#biz-contact">לתאם שיחת היכרות</a></div></div>
+
 <script src="js/submit.js"></script>
 <script>
 (function(){
@@ -266,8 +311,8 @@
       e.preventDefault(); var ok=true;
       f.querySelectorAll('.field').forEach(function(fd){
         var c=fd.querySelector('input,textarea'); if(!c) return;
-        var bad=(c.required&&!c.value.trim())||(c.type==='email'&&c.value&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(c.value));
-        fd.classList.toggle('invalid',bad); if(bad&&ok){ok=false;c.focus()}
+        var bad=(c.required&&!c.value.trim())||(c.type==='email'&&c.value&&!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(c.value))||(c.type==='tel'&&!window.ArticomPhoneOk(c.value));
+        fd.classList.toggle('invalid',bad); c.setAttribute('aria-invalid',bad?'true':'false'); if(bad&&ok){ok=false;c.focus()}
       });
       if(!ok) return;
       var data={journey:f.getAttribute('data-journey')};
@@ -278,9 +323,20 @@
         .catch(function(){ f.classList.add('failed'); f.querySelector('.fail').scrollIntoView({block:'nearest'}); })
         .then(function(){ f.classList.remove('busy'); });
     });
-    f.addEventListener('input',function(e){var fd=e.target.closest('.field');if(fd)fd.classList.remove('invalid')});
+    f.addEventListener('input',function(e){var fd=e.target.closest('.field');if(fd){fd.classList.remove('invalid');e.target.removeAttribute('aria-invalid')}});
   }
   wire('helpForm'); wire('bizForm');
+  // The header button and the mobile bar follow the journey being read.
+  var cta=document.getElementById('ctaLink'),biz=document.getElementById('business'),after=document.getElementById('after'),bizForm=document.getElementById('bizForm'),queued=false;
+  function zone(){
+    queued=false;
+    var mid=window.innerHeight/2,inBiz=biz.getBoundingClientRect().top<mid&&after.getBoundingClientRect().top>mid;
+    var r=bizForm.getBoundingClientRect(),onForm=r.top<window.innerHeight*.7&&r.bottom>0; // no second button over the form itself
+    document.body.setAttribute('data-zone',onForm?'form':inBiz?'biz':'help');
+    cta.setAttribute('href',inBiz?'#biz-contact':'#help-contact');
+  }
+  function queue(){if(!queued){queued=true;requestAnimationFrame(zone)}}
+  addEventListener('scroll',queue,{passive:true}); addEventListener('resize',queue); zone();
 })();
 </script>
 </body>

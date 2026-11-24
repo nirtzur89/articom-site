@@ -14,6 +14,7 @@
     if (!/^\+[1-9]\d{7,14}$/.test(p)) throw new Error('bad_phone');
     return p;
   }
+  root.ArticomPhoneOk = function(v) { try { phoneNumber(v); return true; } catch(e) { return false; } };
   function payload(data) {
     var journey = data.journey === 'biz' ? 'biz' : 'help';
     var name = clean(data.name,80), phone = phoneNumber(data.phone), email = clean(data.email,120);
