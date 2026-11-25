@@ -36,6 +36,8 @@
       lines.push(message);
       if (email) lines.push('', 'דוא"ל: ' + email);
     }
+    var source = clean(data.source,240);
+    if (source) lines.push('', 'הגיע דרך: ' + source);
     var names = name.split(' ');
     return {submission:{formId:FORM_ID,submissions:{
       first_name_819b:names.shift(), last_name_611a:names.join(' ') || '-', phone_number:phone,
